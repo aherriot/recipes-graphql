@@ -1,0 +1,27 @@
+query Recipes {
+  appetizers: recipes(course: APPETIZER) {
+    ...tileRecipeProps
+  }
+  soups: recipes(course: SOUP) {
+    ...tileRecipeProps
+  }
+  salads: recipes(course: SALAD) {
+    ...tileRecipeProps
+  }
+  mains: recipes(course: MAIN) {
+    ...tileRecipeProps
+  }
+  desserts: recipes(course: DESSERT) {
+    ...tileRecipeProps
+  }
+}
+
+fragment tileRecipeProps on Recipe {
+  id
+  title
+  description
+  user {
+    id
+    username
+  }
+}

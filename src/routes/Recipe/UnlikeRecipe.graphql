@@ -1,0 +1,3 @@
+mutation UnlikeRecipe($userId: ID!, $recipeId: ID!) {
+  unlikeRecipe(userId: $userId, recipeId: $recipeId)
+}

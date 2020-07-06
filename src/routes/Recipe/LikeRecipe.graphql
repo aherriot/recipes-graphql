@@ -1,0 +1,3 @@
+mutation LikeRecipe($userId: ID!, $recipeId: ID!) {
+  likeRecipe(userId: $userId, recipeId: $recipeId)
+}
